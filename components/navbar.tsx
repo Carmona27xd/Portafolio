@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function Navbar() {
   const navLinks = [
     { name: "Inicio", path: "#" },
-    { name: "Proyectos", path: "#proyectos" },
+    { name: "Experiencia", path: "#experiencia" },
     { name: "Habilidades", path: "#habilidades" },
     { name: "Contacto", path: "#contacto" },
   ];
@@ -47,7 +47,9 @@ export default function Navbar() {
           {/* 3. Botón de contacto (Derecha) */}
           <div className="hidden md:flex justify-end">
             <a
-              href="#contacto"
+              href="https://www.linkedin.com/in/martin-emmanuel-cruz-carmona-381ab7348/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-2 border border-transparent rounded-full shadow-sm text-sm font-semibold text-white bg-slate-900 hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200 transition-all hover:scale-105 active:scale-95"
             >
               LinkedIn
