@@ -2,13 +2,39 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useLocale } from "next-intl";
+import { useRouter } from 'next/navigation';
+import { useTranslations } from "next-intl";
+
+// Componente para cambiar el idioma
+function LanguageSwitch() {
+  const currentLocale = useLocale();
+  const router = useRouter();
+
+  const toggleLanguage = () => {
+    const nextLang = currentLocale === "es" ? "en" : "es";
+    document.cookie = `NEXT_LOCALE=${nextLang}; path=/; max-age=31536000`;
+    router.refresh();
+  };
+
+  return (
+    <button onClick={toggleLanguage}
+    className="inline-flex items-center justify-center px-6 py-2 border border-transparent rounded-full shadow-sm text-sm font-semibold text-white bg-slate-900 hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-200 transition-all hover:scale-105 active:scale-95"
+    >
+      {currentLocale === "es" ? "EN 🇺🇸" : "ES 🇲🇽"}
+    </button>
+  );
+}
 
 export default function Navbar() {
+
+  const t = useTranslations('Navbar');
+  
   const navLinks = [
-    { name: "Inicio", path: "#" },
-    { name: "Experiencia", path: "#experiencia" },
-    { name: "Habilidades", path: "#habilidades" },
-    { name: "Contacto", path: "#contacto" },
+    { name: t('start') , path: "#" },
+    { name: t('experience'), path: "#experiencia" },
+    { name: t('proyects'), path: "#habilidades" },
+    { name: t('contact'), path: "#contacto" },
   ];
 
   return (
@@ -45,7 +71,8 @@ export default function Navbar() {
           </nav>
 
           {/* 3. Botón de contacto (Derecha) */}
-          <div className="hidden md:flex justify-end">
+          <div className="hidden md:flex justify-end gap-4">
+            <LanguageSwitch/>
             <a
               href="https://www.linkedin.com/in/martin-emmanuel-cruz-carmona-381ab7348/"
               target="_blank"

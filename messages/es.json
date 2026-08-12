@@ -1,0 +1,49 @@
+{
+  "Hero": {
+    "badge": "Disponible para trabajar",
+    "greeting": "Hola, soy",
+    "role": "Ingeniero de Software.",
+    "description": "Soy un desarrollador recién egresado con una fuerte mentalidad autodidacta. Disfruto desarmar problemas complejos, crear automatizaciones eficientes y aprender nuevas tecnologías sobre la marcha.",
+    "downloadCv": "Descargar CV"
+  },
+  "Experience": {
+    "title": "Experiencia Profesional",
+    "subtitle": "Mi trayectoria desarrollando soluciones, desde sistemas transaccionales críticos hasta automatizaciones masivas."
+  },
+  "Navbar": {
+    "start": "Inicio",
+    "experience": "Experiencia",
+    "proyects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "Kuantik": {
+    "title": "Sistema para la automatización de resolución de tickets.",
+    "description": "Diseño y desarrollo de un sistema para la extracción masiva de datos, implementando workers asíncronos para optimizar el rendimiento.",
+    "dates": "Febrero 2026 - Junio 2026",
+    "company": "Kuantik Data Jump"
+  },
+  "Webcreeck": {
+    "title": "Mantenimiento de sistema para el redireccionamiento de ordenes de compra.",
+    "description": "Mantenimiento evolutivo y correctivo para un sistema de redirección de órdenes de compra, asegurando la integridad de la información y solución de bugs.",
+    "dates": "Enero 2025 - Diciembre 2025",
+    "company": "WebCreeck"
+  },
+  "Herbarium": {
+    "title": "Herbario virtual CIB",
+    "description": "Diseño y desarrollo de un hebrario virtual para el centro de investigaciones biologicas de la Universidad Veracruzana.",
+    "dates": "Febrero 2024 - Junio 2024",
+    "company": "Universidad Veracruzana"
+  },
+  "Pharmacy": {
+    "title": "Sistema de gestión farmaceutica",
+    "description": "Diseño y desarrollo de un sistema para la gestión de una cadena de farmacias, inventarios, autenticación de usuarios y contabilidad",
+    "dates": "Agosto 2023 - Diciembre 2023",
+    "company": "Universidad Veracruzana"
+  },
+  "Videogames": {
+    "title": "Plataforma de reseñas sobre videojuegos",
+    "description": "Diseño y desarrollo de un sistema similar a IMDb, para calificar y comentar sobre videojuegos.",
+    "dates": "Agosto 2023 - Diciembre 2023",
+    "company": "Universidad Veracruzana"
+  }
+}

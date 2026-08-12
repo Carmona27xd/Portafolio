@@ -1,0 +1,49 @@
+{
+  "Hero": {
+    "badge": "Available for work",
+    "greeting": "Hello, I'm",
+    "role": "Software Engineer.",
+    "description": "I'm a recent graduate software engineer with a strong self-taught mindset. I enjoy breaking down complex problems, building efficient automations, and learning new technologies on the fly.",
+    "downloadCv": "Download CV"
+  },
+  "Experience": {
+    "title": "Professional Experience",
+    "subtitle": "My journey developing solutions, from critical transactional systems to massive automations."
+  },
+  "Navbar": {
+    "start": "About",
+    "experience": "Experience",
+    "proyects": "Proyects",
+    "contact": "Contact"
+  },
+  "Kuantik": {
+    "title": "Ticket Resolution Automation System",
+    "description": "Design and development of a system for mass data extraction, implementing asynchronous workers to optimize performance.",
+    "dates": "February 2026 - June 2026",
+    "company": "Kuantik Data Jump"
+  },
+  "Webcreeck": {
+    "title": "Purchase Order Rerouting System Maintenance",
+    "description": "Evolutionary and corrective maintenance for a purchase order rerouting system, ensuring data integrity and resolving bugs.",
+    "dates": "January 2025 - December 2025",
+    "company": "WebCreeck"
+  },
+  "Herbarium": {
+    "title": "CIB Virtual Herbarium",
+    "description": "Design and development of a virtual herbarium for the Biological Research Center of the Universidad Veracruzana.",
+    "dates": "February 2024 - June 2024",
+    "company": "Universidad Veracruzana"
+  },
+  "Pharmacy": {
+    "title": "Pharmacy Management System",
+    "description": "Design and development of a system for managing a pharmacy chain, including inventory, user authentication, and accounting.",
+    "dates": "August 2023 - December 2023",
+    "company": "Universidad Veracruzana"
+  },
+  "Videogames": {
+    "title": "Video Game Review Platform",
+    "description": "Design and development of an IMDb-like system for rating and reviewing video games.",
+    "dates": "August 2023 - December 2023",
+    "company": "Universidad Veracruzana"
+  }
+}

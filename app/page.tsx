@@ -1,53 +1,61 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { main } from "framer-motion/m";
 import Link from "next/link";
 import Background3D from "@/components/background3d";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
+
+  const t = useTranslations('Hero');
+  const t2 = useTranslations('Experience');
+  const tkuantik = useTranslations('Kuantik');
+  const tweb = useTranslations('Webcreeck');
+  const theb = useTranslations('Herbarium');
+  const tpharma = useTranslations('Pharmacy');
+  const tvideo = useTranslations('Videogames');
 
   // Definicion de proyectos 
   const experiencia_laboral = [
     {
-      tittle: "Sistema para la automatización de resolución de tickets",
-      description: "Diseño y desarrollo de un sistema para la extracción masiva de datos, implementando workers asíncronos para optimizar el rendimiento.",
+      tittle: tkuantik('title'),
+      description: tkuantik('description'),
       tecnologies: ["Python", "Celery", "Redis", "MongoDB", "Selenium"],
-      dates: "Febrero 2026 - Junio 2026",
+      dates: tkuantik('dates'),
       slug: "sistema-web-scrapping",
-      company: "Kuantik Data Jump"
+      company: tkuantik('company')
     },
     {
-      tittle: "Mantenimiento de sistema para el redireccionamiento de ordenes de compra",
-      description: "Mantenimiento evolutivo y correctivo para un sistema de redirección de órdenes de compra, asegurando la integridad de la información y solución de bugs.",
+      tittle: tweb('title'),
+      description: tweb('description'),
       tecnologies: ["C#", ".NET", "T-SQL", "SQL Server"],
-      dates: "Enero 2025 - Diciembre 2025",
+      dates: tweb('dates'),
       slug: "sistema-ordenes-compra",
-      company: "WebCreeck"
+      company: tweb('company')
     },
     {
-      tittle: "Herbario virtual CIB",
-      description: "Diseño y desarrollo de un hebrario virtual para el centro de investigaciones biologicas de la Universidad Veracruzana",
+      tittle: theb('title'),
+      description: theb('description'),
       tecnologies: ["PHP", "JavaScript", "CSS", "HTML", "Bootstrap", "MySQL", "Apache"],
-      dates: "Febrero 2024 - Junio 2024",
+      dates: theb('dates'),
       slug: "herbario-virtual",
-      company: "Universidad Veracruzana"
+      company: theb('company')
     },
     {
-      tittle: "Sistema de gestión farmaceutica",
-      description: "Diseño y desarrollo de un sistema para la gestión de una cadena de farmacias, inventarios, autenticación de usuarios y contabilidad",
+      tittle: tpharma('title'),
+      description: tpharma('description'),
       tecnologies: ["Python", "JavaScript", "CSS", "HTML", "Angular", "MongoDB"],
-      dates: "Agosto 2023 - Diciembre 2023",
+      dates: tpharma('dates'),
       slug: "sistema-gestion-farmacia",
-      company: "Universidad Veracruzana"
+      company: tpharma('company')
     },
     {
-      tittle: "Plataforma de reseñas sobre videojuegos",
-      description: "Diseño y desarrollo de un sistema similar a IMDb, para calificar y comentar sobre videojuegos",
-      tecnologies: ["Flutter", "Dart", "JavaScript", "GRPC", "API REST"],
-      dates: "Febrero 2023 - Junio 2023",
+      tittle: tvideo('title'),
+      description: tvideo('description'),
+      tecnologies: [".NET", "C#", "GRPC", "API REST", "MySQL"],
+      dates: tvideo('dates'),
       slug: "sistema-IMDb",
-      company: "Universidad Veracruzana"
+      company: tvideo('company')
     }
   ]
   return (
@@ -65,7 +73,7 @@ export default function Home() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
               </span>
-              Disponible para trabajar
+              {t('badge')}
             </motion.div>
 
             <motion.h1
@@ -74,9 +82,9 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-5xl sm:text-6xl font-black tracking-tight text-slate-900 dark:text-white mb-6"
             >
-              Hola, soy <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Emmanuel</span>
+              {t('greeting')} <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Emmanuel</span>
               <br/>
-              Ingeniero de software JR
+              {t('role')}
             </motion.h1>
 
             <motion.p
@@ -85,7 +93,7 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed"
             >
-              Soy un desarrollador con una fuerte mentalidad autodidacta. Disfruto desarmar problemas complejos, crear automatizaciones eficientes y aprender nuevas tecnologías sobre la marcha. Si hay un reto difícil que requiera código limpio, ahí es donde quiero estar.
+              {t('description')}
             </motion.p>
 
             <motion.div
@@ -98,7 +106,7 @@ export default function Home() {
               href="#experiencia"
               className="px-8 py-3 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30"
               >
-                Trayectoria profesional
+                {t2('title')}
               </a>
             </motion.div>
           </div>
@@ -115,10 +123,10 @@ export default function Home() {
           
           <div className="mb-20 text-center p-6 md:p-8 rounded-2xl bg-white/60 dark:bg-slate-950/60 backdrop-blur-xl border-2 border-slate-300 dark:border-slate-600 max-w-3xl mx-auto relative z-10 shadow-sm">
             <h2 className="text-3xl font-black text-slate-900 dark:text-white mb-4 relative z-10">
-              Experiencia profesional
+              {t2('title')}
             </h2>
             <p className="text-slate-700 dark:text-slate-300 max-w-2xl mx-auto relative z-10">
-              Mi trayectoria desarrollando soluciones, desde sistemas transaccionales críticos hasta automatizaciones masivas.
+              {t2('subtitle')}
             </p>
           </div>
 
